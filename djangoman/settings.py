@@ -31,7 +31,7 @@ DATABASES = {
     }
 }
 
-
+MIDDLEWARE = []
 STATIC_URL = "/static/"
 
 import os
