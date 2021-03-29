@@ -24,12 +24,12 @@ TEMPLATES = [
 from pathlib import Path
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
-}
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
 
 MIDDLEWARE = []
 STATIC_URL = "/static/"
@@ -44,6 +44,12 @@ STATIC_ROOT = os.path.join(BASE_DIR1, 'staticfiles')
 
 django_heroku.settings(locals())
 
+DATABASES = {
+    "default": {
+        "ENGINE" : "django.db.backends.sqlite3",
+        "NAME": os.path.join(BASE_DIR1, "db.sqlite3")
+    }
+}s
 
 
 
