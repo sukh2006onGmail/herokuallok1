@@ -34,15 +34,15 @@ DATABASES = {
 MIDDLEWARE = []
 STATIC_URL = "/static/"
 
-import os
-import django_heroku
+# import os
+# import django_heroku
 
-BASE_DIR1 = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+# BASE_DIR1 = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-STATIC_ROOT = os.path.join(BASE_DIR1, 'staticfiles')
-STATIC_URL = "/static/"
+# STATIC_ROOT = os.path.join(BASE_DIR1, 'staticfiles')
+# STATIC_URL = "/static/"
 
-django_heroku.settings(locals())
+# django_heroku.settings(locals())
 
 
 
