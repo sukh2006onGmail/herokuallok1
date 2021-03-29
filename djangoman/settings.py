@@ -49,7 +49,7 @@ DATABASES = {
         "ENGINE" : "django.db.backends.sqlite3",
         "NAME": os.path.join(BASE_DIR1, "db.sqlite3")
     }
-}s
+}
 
 
 
